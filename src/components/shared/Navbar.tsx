@@ -60,7 +60,7 @@ function Navbar() {
 
                         <Box className="w-full text-center">
                             {navItems.map((item) => (
-                                <Link key={item} href={item.pathname}>
+                                <Link key={item.pathname} href={item.pathname}>
                                     <Button className='text-white'>
                                         {
                                             item.route
