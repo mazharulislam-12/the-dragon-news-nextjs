@@ -19,8 +19,7 @@ const DynamicNewsPage = async ({ params, searchParams }) => {
                     <Grid className="my-5" container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                         {data.map((news) => (
                             <Grid key={news.id} item xs={6}>
-                                <Link href={`/${news.category.toLowerCase()}/ ${news._id}`}>
-                                    <Card>
+                                <Card>
                                         <CardActionArea>
                                             <CardMedia
                                                 sx={{
@@ -44,7 +43,6 @@ const DynamicNewsPage = async ({ params, searchParams }) => {
                                             </CardContent>
                                         </CardActionArea>
                                     </Card>
-                                </Link>
                             </Grid>
                         ))}
                     </Grid>
